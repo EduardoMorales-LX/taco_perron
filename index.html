@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/jpg" href="./assets/favicon.ico" />
+        <script
+            src="https://kit.fontawesome.com/ef76bd571c.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.14/fullpage.css"
+            integrity="sha512-j5rbjelirQpuvpLBGAo+rYp3mdBd75uZBqFdtBQytHxQEUWwdbLyDMpDuVm7xVV1MsuEKCyH7KtjLP75lH5+dQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Taco Perrón</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="#menu" class="marca"
+                ><div class="logo">
+                    <img
+                        src="./assets/taco_perron.png"
+                        alt="Logotipo de la taquería"
+                    /></div
+            ></a>
+            <ul id="menu" class="menu">
+                <li data-menuanchor="productos" class="active">
+                    <a href="#productos">Menú</a>
+                </li>
+                <li data-menuanchor="direcciones">
+                    <a href="#direcciones">Direcciones</a>
+                </li>
+                <li data-menuanchor="formulario">
+                    <a href="#formulario">Pedidos</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="fullpage">
+            <section id="productos" class="section productos">
+                <h1 class="encabezado_productos">Nuestro menú</h1>
+                <div class="slide contenido" data-anchor="tacosGrandes">
+                    <h2>Tacos grandes</h2>
+                    <p>Bisteck ------------------ <span>$30</span></p>
+                    <p>Chorizo ----------------- <span>$30</span></p>
+                    <p>Chuleta ----------------- <span>$30</span></p>
+                    <p>Pastor ------------------- <span>$30</span></p>
+                    <p>Campechano ----------- <span>$30</span></p>
+                </div>
+                <div class="slide contenido" data-anchor="tacosChicos">
+                    <h2>Tacos chicos</h2>
+                    <p>Bisteck ------------------ <span>$15</span></p>
+                    <p>Chorizo ----------------- <span>$15</span></p>
+                    <p>Chuleta ----------------- <span>$15</span></p>
+                    <p>Pastor ------------------- <span>$15</span></p>
+                    <p>Campechano ----------- <span>$15</span></p>
+                </div>
+                <div class="slide contenido" data-anchor="tacosEspeciales">
+                    <h2>Tacos especiales <span>$100</span></h2>
+                    <article class="especiales">
+                        <h4>Labrador</h4>
+                        <p>
+                            Alambre de pollo acompañado de tortillas de maíz
+                            grandes
+                        </p>
+                    </article>
+                    <article class="especiales">
+                        <h4>Partor alemán</h4>
+                        <p>
+                            Alambre de pastor con piña acompañado de tortillas
+                            de harina
+                        </p>
+                    </article>
+                    <article class="especiales">
+                        <h4>Pug</h4>
+                        <p>
+                            Alambre de chuleta acompañado de tortillas de maíz
+                            chicas
+                        </p>
+                    </article>
+                    <div class="callout">
+                        <span>Nota</span><br />
+                        Todos los alambres llevan pimiento, cebolla y queso
+                    </div>
+                </div>
+            </section>
+            <section id="direcciones" class="section direcciones">
+                <h1 class="encabezado_direcciones">Ubicaciones</h1>
+                <article class="card">
+                    <h3 class="card-header">Centro</h3>
+                    <div class="card-body">
+                        <p>Francisco I. Madero #20</p>
+                        <p>M-D 10am a 4pm</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3 class="card-header">Sur</h3>
+                    <div class="card-body">
+                        <p>Av. Cuauhtémoc #2507</p>
+                        <p>L-D 5pm a 4am</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3 class="card-header">Norte</h3>
+                    <div class="card-body">
+                        <p>Calle Sonora #315</p>
+                        <p>24 hrs.</p>
+                    </div>
+                </article>
+            </section>
+            <form action="" id="formulario" class="section formulario">
+                <h1 class="encabezado_formulario">Formulario de pedido</h1>
+                <label for="sucursal">Seleccione sucursal</label><br />
+                <select name="sucursal" id="sucursal">
+                    <option value="norte">Sucursal Norte</option>
+                    <option value="sur">Sucursal Sur</option>
+                    <option value="centro">Sucursal Centro</option>
+                </select>
+                <p>Seleccionar tacos</p>
+                <input
+                    type="checkbox"
+                    id="bistec"
+                    name="bistec"
+                    value="bistec"
+                />
+                <label for="bistec">Bistec</label>
+                <input type="number" name="bistec-number" id="bistec-number" />
+                <input
+                    type="radio"
+                    id="chico"
+                    name="bistec-tamanio"
+                    value="chico"
+                />
+                <label for="chico">Chico</label>
+                <input
+                    type="radio"
+                    id="grande"
+                    name="bistec-tamanio"
+                    value="grande"
+                />
+                <label for="grande">Grande</label><br />
+                <input
+                    type="checkbox"
+                    id="chorizo"
+                    name="chorizo"
+                    value="chorizo"
+                />
+                <label for="chorizo">Chorizo</label>
+                <input
+                    type="number"
+                    name="chorizo-number"
+                    id="chorizo-number"
+                />
+                <input
+                    type="radio"
+                    id="chico"
+                    name="chorizo-tamanio"
+                    value="chico"
+                />
+                <label for="chico">Chico</label>
+                <input
+                    type="radio"
+                    id="grande"
+                    name="chorizo-tamanio"
+                    value="grande"
+                />
+                <label for="grande">Grande</label><br />
+                <input
+                    type="checkbox"
+                    id="chuleta"
+                    name="chuleta"
+                    value="chuleta"
+                />
+                <label for="chuleta">Chuleta</label>
+                <input
+                    type="number"
+                    name="chuleta-number"
+                    id="chuleta-number"
+                />
+                <input
+                    type="radio"
+                    id="chico"
+                    name="chuleta-tamanio"
+                    value="chico"
+                />
+                <label for="chico">Chico</label>
+                <input
+                    type="radio"
+                    id="grande"
+                    name="chuleta-tamanio"
+                    value="grande"
+                />
+                <label for="grande">Grande</label><br />
+                <input
+                    type="checkbox"
+                    id="pastor"
+                    name="pastor"
+                    value="pastor"
+                />
+                <label for="pastor">Pastor</label>
+                <input type="number" name="pastor-number" id="pastor-number" />
+                <input
+                    type="radio"
+                    id="chico"
+                    name="pastor-tamanio"
+                    value="chico"
+                />
+                <label for="chico">Chico</label>
+                <input
+                    type="radio"
+                    id="grande"
+                    name="pastor-tamanio"
+                    value="grande"
+                />
+                <label for="grande">Grande</label><br />
+                <input
+                    type="checkbox"
+                    id="campechano"
+                    name="campechano"
+                    value="campechano"
+                />
+                <label for="campechano">Campechano</label>
+                <input
+                    type="number"
+                    name="campechano-number"
+                    id="campechano-number"
+                />
+                <input
+                    type="radio"
+                    id="chico"
+                    name="campechano-tamanio"
+                    value="chico"
+                />
+                <label for="chico">Chico</label>
+                <input
+                    type="radio"
+                    id="grande"
+                    name="campechano-tamanio"
+                    value="grande"
+                />
+                <label for="grande">Grande</label><br />
+                <input
+                    type="checkbox"
+                    id="labrador"
+                    name="labrador"
+                    value="labrador"
+                />
+                <label for="labrador">Labrador</label>
+                <input
+                    type="number"
+                    name="labrador-number"
+                    id="labrador-number"
+                /><br />
+                <input
+                    type="checkbox"
+                    id="pastor-aleman"
+                    name="pastor-aleman"
+                    value="pastor-aleman"
+                />
+                <label for="pastor-aleman">Pastor alemán</label>
+                <input
+                    type="number"
+                    name="pastor-aleman-number"
+                    id="pastor-aleman-number"
+                /><br />
+                <input type="checkbox" id="pug" name="pug" value="pug" />
+                <label for="pug">Pug</label>
+                <input type="number" name="pug-number" id="pug-number" /><br />
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" /><br />
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" /><br />
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" /><br />
+                <button type="submit">Enviar</button>
+            </form>
+            <footer class="section fp-auto-height">
+                <a
+                    href="https://www.instagram.com/innovaccionvirtual/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                    href="https://www.youtube.com/channel/UCy3aRa7Jtw4y-whtTl9ZNBg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                <p>Derechos reservados. Taco Perrón®</p>
+            </footer>
+        </main>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.14/fullpage.js"
+            integrity="sha512-0VP6jI0mkS2XbhaNluFHhxiNR9S1U/0qqQPqSrLKt+aG5vOHE/fqU3iCWsL9aSC5rRIza1AO4GMMIA67WXp9oQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./app.js"></script>
+    </body>
+</html>

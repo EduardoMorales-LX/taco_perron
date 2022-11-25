@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Bebas+Neue&family=Manrope&family=Montserrat&display=swap");
+/*
+color fondo del logo #FFF699
+color taco #F94616
+color perrón #E36D23
+color amarillo #EFDD1C
+*/
+
+:root {
+    --card-color: rgba(54, 0, 204, 0.555);
+    --card-header-color: crimson;
+    --card-body-color: rgb(40, 4, 124);
+    --card-footer-color: indigo;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f4e8d0;
+}
+
+h1 {
+    font-family: "Manrope", sans-serif;
+}
+
+/*Estilos de la imagen*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+/*Estilos del nav*/
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: darkslategrey;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    font-size: 19px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid #dc9a15;
+}
+
+.menu li a {
+    transition: 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: orange;
+}
+
+/* Estilos de los productos */
+.encabezado_productos {
+    padding-top: 110px;
+    padding-left: calc(100% / 2 - 200px);
+    color: #478a90;
+    font-size: 60px;
+}
+
+.contenido {
+    align-items: center;
+    margin-top: -160px;
+    font-size: 1.5em;
+}
+
+span {
+    color: #dc9a15;
+}
+
+.callout,
+.callout > span {
+    margin-top: 20px;
+    color: darkcyan;
+    font-size: 20px;
+}
+
+.fp-slidesNav {
+    width: 100px;
+}
+
+/* Estilos de las direcciones */
+.encabezado_direcciones {
+    padding-left: calc(100% / 2 - 200px);
+    color: #00644e;
+    font-size: 60px;
+}
+
+.direcciones {
+    display: inline-block;
+}
+
+.card {
+    margin: 0 auto;
+    background: var(--card-color);
+    color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+}
+
+.card-header {
+    background: var(--card-header-color);
+    margin: -20px;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-body {
+    background: var(--card-body-color);
+    margin: -20px;
+    padding: 20px;
+    border-radius: 00px 00px 20px 20px;
+}
+
+.card-footer {
+    background: var(--card-footer-color);
+    margin: -20px;
+    padding: 20px;
+    border-radius: 00px 00px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos del formulario */
+.encabezado_formulario {
+    padding-top: 30px;
+    padding-left: calc(100% / 2 - 300px);
+    color: #add2ca;
+    font-size: 60px;
+}
+
+/*Estilos del footer*/
+footer {
+    font-family: "Montserrat", sans-serif;
+    background: rgba(255, 246, 153, 0.9);
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* @keyframes bajar-subir {
+    0% {
+        transform: translateY(20px);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+} */

@@ -6,13 +6,6 @@ color perrón #E36D23
 color amarillo #EFDD1C
 */
 
-:root {
-    --card-color: rgba(54, 0, 204, 0.555);
-    --card-header-color: crimson;
-    --card-body-color: rgb(40, 4, 124);
-    --card-footer-color: indigo;
-}
-
 * {
     font-family: "Lato", sans-serif;
     color: #000;
@@ -115,41 +108,27 @@ span {
     font-size: 60px;
 }
 
-.direcciones {
-    display: inline-block;
-}
-
 .card {
-    margin: 0 auto;
-    background: var(--card-color);
-    color: rgb(255, 255, 255);
-    width: 400px;
+    display: inline-block;
+    margin: 100px;
+    width: 200px;
     padding: 20px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
     border-radius: 20px;
 }
 
 .card-header {
-    background: var(--card-header-color);
+    background: #e0e0e0;
     margin: -20px;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card-body {
-    background: var(--card-body-color);
+    background: #547794;
     margin: -20px;
     padding: 20px;
     border-radius: 00px 00px 20px 20px;
-}
-
-.card-footer {
-    background: var(--card-footer-color);
-    margin: -20px;
-    padding: 20px;
-    border-radius: 00px 00px 20px 20px;
-    display: flex;
-    justify-content: space-between;
 }
 
 /* Estilos del formulario */

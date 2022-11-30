@@ -6,15 +6,31 @@ color perrón #E36D23
 color amarillo #EFDD1C
 */
 
+:root {
+    --color-negro-full-doc: #181717;
+    --color-blanco-body: #f4e8d0;
+    --color-naraja-activo: #dc9a15;
+    --color-naranja-hover: #ffb82b;
+    --color-blanco-form: #f8f8f8;
+    --color-azul-encabezado-form: #add2ca;
+    --color-gris-label: #7c7c7c;
+    --color-bg-nav: #2f4f4f;
+    --color-azul-encabezado-productos: #478a90;
+    --color-encabezado-direcciones: #00644e;
+    --color-box-shadow: rgba(0, 0, 0, 0.377);
+    --color-bg-header-card: #e0e0e0;
+    --color-bg-body-card: #547794;
+}
+
 * {
     font-family: "Lato", sans-serif;
-    color: #000;
+    color: var(--color-negro-full-doc);
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #f4e8d0;
+    background-color: var(--color-blanco-body);
 }
 
 h1 {
@@ -42,7 +58,7 @@ img {
     width: 100%;
     margin: 0;
     padding: 10px 20px;
-    background-color: darkslategrey;
+    background-color: var(--color-bg-nav);
 }
 
 .nav li,
@@ -53,12 +69,12 @@ img {
     text-transform: uppercase;
     font-family: "Manrope", sans-serif;
     font-size: 19px;
-    color: white;
+    color: var(--color-blanco-form);
     transition: 0.5s ease;
 }
 
 .nav li.active {
-    border-bottom: 2px solid #dc9a15;
+    border-bottom: 2px solid var(--color-naraja-activo);
 }
 
 .menu li a {
@@ -69,14 +85,14 @@ img {
 
 .menu li.active a,
 .menu li:hover a {
-    color: orange;
+    color: var(--color-naraja-activo);
 }
 
 /* Estilos de los productos */
 .encabezado_productos {
     padding-top: 110px;
     padding-left: calc(100% / 2 - 200px);
-    color: #478a90;
+    color: var(--color-azul-encabezado-productos);
     font-size: 60px;
 }
 
@@ -87,7 +103,7 @@ img {
 }
 
 span {
-    color: #dc9a15;
+    color: var(--color-naraja-activo);
 }
 
 .callout,
@@ -104,7 +120,7 @@ span {
 /* Estilos de las direcciones */
 .encabezado_direcciones {
     padding-left: calc(100% / 2 - 200px);
-    color: #00644e;
+    color: var(--color-encabezado-direcciones);
     font-size: 60px;
 }
 
@@ -113,19 +129,19 @@ span {
     margin: 100px;
     width: 200px;
     padding: 20px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 10px 15px var(--color-box-shadow);
     border-radius: 20px;
 }
 
 .card-header {
-    background: #e0e0e0;
+    background: var(--color-bg-header-card);
     margin: -20px;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card-body {
-    background: #547794;
+    background: var(--color-bg-body-card);
     margin: -20px;
     padding: 20px;
     border-radius: 00px 00px 20px 20px;
@@ -135,33 +151,33 @@ span {
 .encabezado_formulario {
     padding-top: 30px;
     padding-left: calc(100% / 2 - 300px);
-    color: #add2ca;
+    color: var(--color-azul-encabezado-form);
     font-size: 60px;
 }
 
 .contenedor-formulario {
     margin: 0 auto;
     width: 500px;
-    background-color: #f8f8f8;
+    background-color: var(--color-blanco-form);
     padding: 10px;
     border-radius: 5px;
 }
 
 .contenedor-formulario label {
-    color: #7c7c7c;
+    color: var(--color-gris-label);
 }
 
 .contenedor-formulario input {
     margin-top: 5px;
     border: none;
+    background: none;
     height: 30px;
-    background-color: #fdf9f9;
-    border: solid 1px #478a90;
+    border: solid 1px var(--color-azul-encabezado-productos);
     padding: 0 8px;
 }
 
 .contenedor-formulario input:focus {
-    border: solid 2px #ffb82b;
+    border: solid 2px var(--color-naranja-hover);
     outline: none;
 }
 
@@ -183,7 +199,6 @@ span {
     font-size: 16px;
     padding: 0 20px;
     outline: none;
-    background: none;
     z-index: 1;
 }
 
@@ -199,7 +214,7 @@ span {
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
-    background-color: #f8f8f8;
+    background-color: var(--color-blanco-form);
 }
 
 .contenedor-formulario input[type="text"]:focus + label,
@@ -209,7 +224,7 @@ span {
     z-index: 10;
     font-size: 14px;
     font-weight: 1000;
-    color: #ffb82b;
+    color: var(--color-naranja-hover);
 }
 
 /* To avoid a collision between label and text entered */
@@ -229,14 +244,14 @@ span {
     margin-top: 15px;
     width: 100%;
     height: 30px;
-    background-color: #dc9a15;
-    color: #fef3f3;
+    background-color: var(--color-naraja-activo);
+    color: var(--color-bg-header-card);
     padding: 5px;
 }
 
 .contenedor-formulario button:hover,
 .contenedor-formulario button:active {
-    background-color: #ffb82b;
+    background-color: var(--color-naranja-hover);
     cursor: pointer;
 }
 

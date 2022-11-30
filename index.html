@@ -114,169 +114,205 @@
             </section>
             <form action="" id="formulario" class="section formulario">
                 <h1 class="encabezado_formulario">Formulario de pedido</h1>
-                <label for="sucursal">Seleccione sucursal</label><br />
-                <select name="sucursal" id="sucursal">
-                    <option value="norte">Sucursal Norte</option>
-                    <option value="sur">Sucursal Sur</option>
-                    <option value="centro">Sucursal Centro</option>
-                </select>
-                <p>Seleccionar tacos</p>
-                <input
-                    type="checkbox"
-                    id="bistec"
-                    name="bistec"
-                    value="bistec"
-                />
-                <label for="bistec">Bistec</label>
-                <input type="number" name="bistec-number" id="bistec-number" />
-                <input
-                    type="radio"
-                    id="chico"
-                    name="bistec-tamanio"
-                    value="chico"
-                />
-                <label for="chico">Chico</label>
-                <input
-                    type="radio"
-                    id="grande"
-                    name="bistec-tamanio"
-                    value="grande"
-                />
-                <label for="grande">Grande</label><br />
-                <input
-                    type="checkbox"
-                    id="chorizo"
-                    name="chorizo"
-                    value="chorizo"
-                />
-                <label for="chorizo">Chorizo</label>
-                <input
-                    type="number"
-                    name="chorizo-number"
-                    id="chorizo-number"
-                />
-                <input
-                    type="radio"
-                    id="chico"
-                    name="chorizo-tamanio"
-                    value="chico"
-                />
-                <label for="chico">Chico</label>
-                <input
-                    type="radio"
-                    id="grande"
-                    name="chorizo-tamanio"
-                    value="grande"
-                />
-                <label for="grande">Grande</label><br />
-                <input
-                    type="checkbox"
-                    id="chuleta"
-                    name="chuleta"
-                    value="chuleta"
-                />
-                <label for="chuleta">Chuleta</label>
-                <input
-                    type="number"
-                    name="chuleta-number"
-                    id="chuleta-number"
-                />
-                <input
-                    type="radio"
-                    id="chico"
-                    name="chuleta-tamanio"
-                    value="chico"
-                />
-                <label for="chico">Chico</label>
-                <input
-                    type="radio"
-                    id="grande"
-                    name="chuleta-tamanio"
-                    value="grande"
-                />
-                <label for="grande">Grande</label><br />
-                <input
-                    type="checkbox"
-                    id="pastor"
-                    name="pastor"
-                    value="pastor"
-                />
-                <label for="pastor">Pastor</label>
-                <input type="number" name="pastor-number" id="pastor-number" />
-                <input
-                    type="radio"
-                    id="chico"
-                    name="pastor-tamanio"
-                    value="chico"
-                />
-                <label for="chico">Chico</label>
-                <input
-                    type="radio"
-                    id="grande"
-                    name="pastor-tamanio"
-                    value="grande"
-                />
-                <label for="grande">Grande</label><br />
-                <input
-                    type="checkbox"
-                    id="campechano"
-                    name="campechano"
-                    value="campechano"
-                />
-                <label for="campechano">Campechano</label>
-                <input
-                    type="number"
-                    name="campechano-number"
-                    id="campechano-number"
-                />
-                <input
-                    type="radio"
-                    id="chico"
-                    name="campechano-tamanio"
-                    value="chico"
-                />
-                <label for="chico">Chico</label>
-                <input
-                    type="radio"
-                    id="grande"
-                    name="campechano-tamanio"
-                    value="grande"
-                />
-                <label for="grande">Grande</label><br />
-                <input
-                    type="checkbox"
-                    id="labrador"
-                    name="labrador"
-                    value="labrador"
-                />
-                <label for="labrador">Labrador</label>
-                <input
-                    type="number"
-                    name="labrador-number"
-                    id="labrador-number"
-                /><br />
-                <input
-                    type="checkbox"
-                    id="pastor-aleman"
-                    name="pastor-aleman"
-                    value="pastor-aleman"
-                />
-                <label for="pastor-aleman">Pastor alemán</label>
-                <input
-                    type="number"
-                    name="pastor-aleman-number"
-                    id="pastor-aleman-number"
-                /><br />
-                <input type="checkbox" id="pug" name="pug" value="pug" />
-                <label for="pug">Pug</label>
-                <input type="number" name="pug-number" id="pug-number" /><br />
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" /><br />
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" id="telefono" /><br />
-                <label for="direccion">Dirección</label>
-                <input type="text" name="direccion" id="direccion" /><br />
-                <button type="submit">Enviar</button>
+                <div class="contenedor-formulario">
+                    <div class="input-text">
+                        <input
+                            type="text"
+                            name="nombre"
+                            id="nombre"
+                            placeholder="Escribir nombre"
+                        />
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-text">
+                        <input
+                            type="tel"
+                            name="telefono"
+                            id="telefono"
+                            placeholder="Escribir teléfono"
+                        />
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="input-text">
+                        <input
+                            type="text"
+                            name="direccion"
+                            id="direccion"
+                            placeholder="Escribir dirección de entrega"
+                        />
+                        <label for="direccion">Dirección</label>
+                    </div>
+
+                    <label for="sucursal">Seleccione sucursal</label><br />
+                    <select name="sucursal" id="sucursal">
+                        <option value="norte">Sucursal Norte</option>
+                        <option value="sur">Sucursal Sur</option>
+                        <option value="centro">Sucursal Centro</option>
+                    </select>
+                    <p>Seleccionar tacos</p>
+                    <input
+                        type="checkbox"
+                        id="bistec"
+                        name="bistec"
+                        value="bistec"
+                    />
+                    <label for="bistec">Bistec</label>
+                    <input
+                        type="number"
+                        name="bistec-number"
+                        id="bistec-number"
+                    />
+                    <input
+                        type="radio"
+                        id="chico"
+                        name="bistec-tamanio"
+                        value="chico"
+                    />
+                    <label for="chico">Chico</label>
+                    <input
+                        type="radio"
+                        id="grande"
+                        name="bistec-tamanio"
+                        value="grande"
+                    />
+                    <label for="grande">Grande</label><br />
+                    <input
+                        type="checkbox"
+                        id="chorizo"
+                        name="chorizo"
+                        value="chorizo"
+                    />
+                    <label for="chorizo">Chorizo</label>
+                    <input
+                        type="number"
+                        name="chorizo-number"
+                        id="chorizo-number"
+                    />
+                    <input
+                        type="radio"
+                        id="chico"
+                        name="chorizo-tamanio"
+                        value="chico"
+                    />
+                    <label for="chico">Chico</label>
+                    <input
+                        type="radio"
+                        id="grande"
+                        name="chorizo-tamanio"
+                        value="grande"
+                    />
+                    <label for="grande">Grande</label><br />
+                    <input
+                        type="checkbox"
+                        id="chuleta"
+                        name="chuleta"
+                        value="chuleta"
+                    />
+                    <label for="chuleta">Chuleta</label>
+                    <input
+                        type="number"
+                        name="chuleta-number"
+                        id="chuleta-number"
+                    />
+                    <input
+                        type="radio"
+                        id="chico"
+                        name="chuleta-tamanio"
+                        value="chico"
+                    />
+                    <label for="chico">Chico</label>
+                    <input
+                        type="radio"
+                        id="grande"
+                        name="chuleta-tamanio"
+                        value="grande"
+                    />
+                    <label for="grande">Grande</label><br />
+                    <input
+                        type="checkbox"
+                        id="pastor"
+                        name="pastor"
+                        value="pastor"
+                    />
+                    <label for="pastor">Pastor</label>
+                    <input
+                        type="number"
+                        name="pastor-number"
+                        id="pastor-number"
+                    />
+                    <input
+                        type="radio"
+                        id="chico"
+                        name="pastor-tamanio"
+                        value="chico"
+                    />
+                    <label for="chico">Chico</label>
+                    <input
+                        type="radio"
+                        id="grande"
+                        name="pastor-tamanio"
+                        value="grande"
+                    />
+                    <label for="grande">Grande</label><br />
+                    <input
+                        type="checkbox"
+                        id="campechano"
+                        name="campechano"
+                        value="campechano"
+                    />
+                    <label for="campechano">Campechano</label>
+                    <input
+                        type="number"
+                        name="campechano-number"
+                        id="campechano-number"
+                    />
+                    <input
+                        type="radio"
+                        id="chico"
+                        name="campechano-tamanio"
+                        value="chico"
+                    />
+                    <label for="chico">Chico</label>
+                    <input
+                        type="radio"
+                        id="grande"
+                        name="campechano-tamanio"
+                        value="grande"
+                    />
+                    <label for="grande">Grande</label><br />
+                    <input
+                        type="checkbox"
+                        id="labrador"
+                        name="labrador"
+                        value="labrador"
+                    />
+                    <label for="labrador">Labrador</label>
+                    <input
+                        type="number"
+                        name="labrador-number"
+                        id="labrador-number"
+                    /><br />
+                    <input
+                        type="checkbox"
+                        id="pastor-aleman"
+                        name="pastor-aleman"
+                        value="pastor-aleman"
+                    />
+                    <label for="pastor-aleman">Pastor alemán</label>
+                    <input
+                        type="number"
+                        name="pastor-aleman-number"
+                        id="pastor-aleman-number"
+                    /><br />
+                    <input type="checkbox" id="pug" name="pug" value="pug" />
+                    <label for="pug">Pug</label>
+                    <input
+                        type="number"
+                        name="pug-number"
+                        id="pug-number"
+                    /><br />
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
             <footer class="section fp-auto-height">
                 <a

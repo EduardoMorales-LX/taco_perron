@@ -255,6 +255,46 @@ span {
     cursor: pointer;
 }
 
+.contenedor-select label {
+    font-size: 16px;
+}
+
+.contenedor-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: solid 1px var(--color-azul-encabezado-productos);
+    font-size: 1.1em;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 8px;
+    height: 45px;
+    width: 81%;
+    text-align: center;
+}
+
+.contenedor-select i {
+    position: relative;
+    left: -35px;
+    top: calc(50% - 13px);
+    font-size: 1.3em;
+    color: var(--color-azul-encabezado-productos);
+}
+
+.contenedor-select select:hover,
+.contenedor-select select:focus {
+    outline: none;
+}
+
+.contenedor-select select:hover {
+    border: solid 2px var(--color-naranja-hover);
+}
+
+/* Modifica al elemento hermano del select  (Flecha)*/
+.contenedor-select select:hover + i {
+    color: var(--color-naranja-hover);
+}
+
 /*Estilos del footer*/
 footer {
     font-family: "Montserrat", sans-serif;

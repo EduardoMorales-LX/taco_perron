@@ -143,12 +143,21 @@
                         <label for="direccion">Dirección</label>
                     </div>
 
-                    <label for="sucursal">Seleccione sucursal</label><br />
-                    <select name="sucursal" id="sucursal">
-                        <option value="norte">Sucursal Norte</option>
-                        <option value="sur">Sucursal Sur</option>
-                        <option value="centro">Sucursal Centro</option>
-                    </select>
+                    <div class="contenedor-select">
+                        <label for="sucursal" class="label-sucursal">
+                            Sucursal
+                        </label>
+                        <select name="sucursal" id="sucursal">
+                            <option value="default">
+                                Seleccione una opción
+                            </option>
+                            <option value="norte">Sucursal Norte</option>
+                            <option value="sur">Sucursal Sur</option>
+                            <option value="centro">Sucursal Centro</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
                     <p>Seleccionar tacos</p>
                     <input
                         type="checkbox"

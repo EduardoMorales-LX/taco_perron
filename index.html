@@ -159,167 +159,228 @@
                     </div>
 
                     <p>Seleccionar tacos</p>
-                    <input
-                        type="checkbox"
-                        id="bistec"
-                        name="bistec"
-                        value="bistec"
-                    />
-                    <label for="bistec">Bistec</label>
-                    <input
-                        type="number"
-                        name="bistec-number"
-                        id="bistec-number"
-                    />
-                    <input
-                        type="radio"
-                        id="chico"
-                        name="bistec-tamanio"
-                        value="chico"
-                    />
-                    <label for="chico">Chico</label>
-                    <input
-                        type="radio"
-                        id="grande"
-                        name="bistec-tamanio"
-                        value="grande"
-                    />
-                    <label for="grande">Grande</label><br />
-                    <input
-                        type="checkbox"
-                        id="chorizo"
-                        name="chorizo"
-                        value="chorizo"
-                    />
-                    <label for="chorizo">Chorizo</label>
-                    <input
-                        type="number"
-                        name="chorizo-number"
-                        id="chorizo-number"
-                    />
-                    <input
-                        type="radio"
-                        id="chico"
-                        name="chorizo-tamanio"
-                        value="chico"
-                    />
-                    <label for="chico">Chico</label>
-                    <input
-                        type="radio"
-                        id="grande"
-                        name="chorizo-tamanio"
-                        value="grande"
-                    />
-                    <label for="grande">Grande</label><br />
-                    <input
-                        type="checkbox"
-                        id="chuleta"
-                        name="chuleta"
-                        value="chuleta"
-                    />
-                    <label for="chuleta">Chuleta</label>
-                    <input
-                        type="number"
-                        name="chuleta-number"
-                        id="chuleta-number"
-                    />
-                    <input
-                        type="radio"
-                        id="chico"
-                        name="chuleta-tamanio"
-                        value="chico"
-                    />
-                    <label for="chico">Chico</label>
-                    <input
-                        type="radio"
-                        id="grande"
-                        name="chuleta-tamanio"
-                        value="grande"
-                    />
-                    <label for="grande">Grande</label><br />
-                    <input
-                        type="checkbox"
-                        id="pastor"
-                        name="pastor"
-                        value="pastor"
-                    />
-                    <label for="pastor">Pastor</label>
-                    <input
-                        type="number"
-                        name="pastor-number"
-                        id="pastor-number"
-                    />
-                    <input
-                        type="radio"
-                        id="chico"
-                        name="pastor-tamanio"
-                        value="chico"
-                    />
-                    <label for="chico">Chico</label>
-                    <input
-                        type="radio"
-                        id="grande"
-                        name="pastor-tamanio"
-                        value="grande"
-                    />
-                    <label for="grande">Grande</label><br />
-                    <input
-                        type="checkbox"
-                        id="campechano"
-                        name="campechano"
-                        value="campechano"
-                    />
-                    <label for="campechano">Campechano</label>
-                    <input
-                        type="number"
-                        name="campechano-number"
-                        id="campechano-number"
-                    />
-                    <input
-                        type="radio"
-                        id="chico"
-                        name="campechano-tamanio"
-                        value="chico"
-                    />
-                    <label for="chico">Chico</label>
-                    <input
-                        type="radio"
-                        id="grande"
-                        name="campechano-tamanio"
-                        value="grande"
-                    />
-                    <label for="grande">Grande</label><br />
-                    <input
-                        type="checkbox"
-                        id="labrador"
-                        name="labrador"
-                        value="labrador"
-                    />
-                    <label for="labrador">Labrador</label>
-                    <input
-                        type="number"
-                        name="labrador-number"
-                        id="labrador-number"
-                    /><br />
-                    <input
-                        type="checkbox"
-                        id="pastor-aleman"
-                        name="pastor-aleman"
-                        value="pastor-aleman"
-                    />
-                    <label for="pastor-aleman">Pastor alemán</label>
-                    <input
-                        type="number"
-                        name="pastor-aleman-number"
-                        id="pastor-aleman-number"
-                    /><br />
-                    <input type="checkbox" id="pug" name="pug" value="pug" />
-                    <label for="pug">Pug</label>
-                    <input
-                        type="number"
-                        name="pug-number"
-                        id="pug-number"
-                    /><br />
+                    <div class="contenedor-checkbox bistec">
+                        <input
+                            type="checkbox"
+                            id="bistec"
+                            name="bistec"
+                            value="bistec"
+                        />
+                        <label for="bistec">Bistec</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="bistec-number"
+                            id="bistec-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                        <input
+                            type="radio"
+                            id="chico"
+                            name="bistec-tamanio"
+                            value="chico"
+                        />
+                        <label for="chico">Chico</label>
+                        <input
+                            type="radio"
+                            id="grande"
+                            name="bistec-tamanio"
+                            value="grande"
+                        />
+                        <label for="grande">Grande</label><br />
+                    </div>
+
+                    <div class="contenedor-checkbox chorizo">
+                        <input
+                            type="checkbox"
+                            id="chorizo"
+                            name="chorizo"
+                            value="chorizo"
+                        />
+                        <label for="chorizo">Chorizo</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="chorizo-number"
+                            id="chorizo-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                        <input
+                            type="radio"
+                            id="chico"
+                            name="chorizo-tamanio"
+                            value="chico"
+                        />
+                        <label for="chico">Chico</label>
+                        <input
+                            type="radio"
+                            id="grande"
+                            name="chorizo-tamanio"
+                            value="grande"
+                        />
+                        <label for="grande">Grande</label><br />
+                    </div>
+
+                    <div class="contenedor-checkbox chuleta">
+                        <input
+                            type="checkbox"
+                            id="chuleta"
+                            name="chuleta"
+                            value="chuleta"
+                        />
+                        <label for="chuleta">Chuleta</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="chuleta-number"
+                            id="chuleta-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                        <input
+                            type="radio"
+                            id="chico"
+                            name="chuleta-tamanio"
+                            value="chico"
+                        />
+                        <label for="chico">Chico</label>
+                        <input
+                            type="radio"
+                            id="grande"
+                            name="chuleta-tamanio"
+                            value="grande"
+                        />
+                        <label for="grande">Grande</label><br />
+                    </div>
+
+                    <div class="contenedor-checkbox pastor">
+                        <input
+                            type="checkbox"
+                            id="pastor"
+                            name="pastor"
+                            value="pastor"
+                        />
+                        <label for="pastor">Pastor</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="pastor-number"
+                            id="pastor-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                        <input
+                            type="radio"
+                            id="chico"
+                            name="pastor-tamanio"
+                            value="chico"
+                        />
+                        <label for="chico">Chico</label>
+                        <input
+                            type="radio"
+                            id="grande"
+                            name="pastor-tamanio"
+                            value="grande"
+                        />
+                        <label for="grande">Grande</label><br />
+                    </div>
+
+                    <div class="contenedor-checkbox campechano">
+                        <input
+                            type="checkbox"
+                            id="campechano"
+                            name="campechano"
+                            value="campechano"
+                        />
+                        <label for="campechano">Campechano</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="campechano-number"
+                            id="campechano-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                        <input
+                            type="radio"
+                            id="chico"
+                            name="campechano-tamanio"
+                            value="chico"
+                        />
+                        <label for="chico">Chico</label>
+                        <input
+                            type="radio"
+                            id="grande"
+                            name="campechano-tamanio"
+                            value="grande"
+                        />
+                        <label for="grande">Grande</label><br />
+                    </div>
+
+                    <div class="contenedor-checkbox labrador">
+                        <input
+                            type="checkbox"
+                            id="labrador"
+                            name="labrador"
+                            value="labrador"
+                        />
+                        <label for="labrador">Labrador</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="labrador-number"
+                            id="labrador-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                    </div>
+
+                    <div class="contenedor-checkbox pastor-aleman">
+                        <input
+                            type="checkbox"
+                            id="pastor-aleman"
+                            name="pastor-aleman"
+                            value="pastor-aleman"
+                        />
+                        <label for="pastor-aleman">Pastor alemán</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="pastor-aleman-number"
+                            id="pastor-aleman-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                    </div>
+
+                    <div class="contenedor-checkbox pug">
+                        <input
+                            type="checkbox"
+                            id="pug"
+                            name="pug"
+                            value="pug"
+                        />
+                        <label for="pug">Pug</label>
+                        <button class="number-button dec">-</button>
+                        <input
+                            type="number"
+                            name="pug-number"
+                            id="pug-number"
+                            min="0"
+                            value="0"
+                        />
+                        <button class="number-button inc">+</button>
+                    </div>
+
                     <button type="submit">Enviar</button>
                 </div>
             </form>

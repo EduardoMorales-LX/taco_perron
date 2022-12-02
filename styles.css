@@ -119,9 +119,15 @@ span {
 
 /* -------------------------------- Estilos de las direcciones -------------------------------- */
 .encabezado_direcciones {
+    padding-top: 120px;
     padding-left: calc(100% / 2 - 200px);
     color: var(--color-encabezado-direcciones);
     font-size: 60px;
+}
+
+.card-layout {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
 }
 
 .card {
@@ -149,14 +155,14 @@ span {
 
 /* -------------------------------- Estilos del formulario -------------------------------- */
 .encabezado_formulario {
-    padding-top: 30px;
+    padding-top: 110px;
     padding-left: calc(100% / 2 - 300px);
     color: var(--color-azul-encabezado-form);
     font-size: 60px;
 }
 
 .contenedor-formulario {
-    margin: 0 auto;
+    margin: 15px auto;
     width: 500px;
     background-color: var(--color-blanco-form);
     padding: 10px;
